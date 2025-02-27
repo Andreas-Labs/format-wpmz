@@ -1,6 +1,6 @@
 {
-   "name": "@format/wpml-kml",
-  "version": "0.0.1",
+  "name": "@format/wpml-kml",
+  "version": "0.0.2",
   "license": "MIT",
   "exports": "./src/mod.ts",
   "tasks": {
@@ -14,5 +14,13 @@
     ".github",
     ".vscode",
     "bin"
-  ]
+  ],
+  "fmt": {
+    "useTabs": true,
+    "lineWidth": 120,
+    "indentWidth": 4,
+    "semiColons": true,
+    "singleQuote": true,
+    "include": ["src/"]
+  }
 }
