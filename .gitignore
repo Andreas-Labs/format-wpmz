@@ -36,3 +36,13 @@ junit.xml
 # Jupyter files
 .ipynb_checkpoints/
 Untitled*.ipynb
+
+# Temp generated files
+simple.wpml
+simple.kml
+regenerated.kml
+template.json
+template.kml
+waylines.wpml
+generated.kml
+waylines.json

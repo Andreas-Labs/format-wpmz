@@ -2,6 +2,7 @@ import { parseXML } from "./xml/parser.ts";
 import { generateXML } from "./xml/generator.ts";
 import { generateKML } from "./kml/generate.ts";
 import { KMLTemplate } from "./kml/template.ts";
+import { createSimpleWPMLDocument, generateWPML } from "./kml/wpml_generate.ts";
 
 // Add this interface at the top of the file
 interface XMLParseError extends Error {
@@ -110,6 +111,10 @@ async function main() {
             console.error('Error:', error);
         }
     }
+
+    const wpml = createSimpleWPMLDocument();
+    await Deno.writeTextFile('simple.wpml', generateXML(wpml.toXMLNode()));
+    console.log('Generated WPML file: simple.wpml');
 }
 
 // Run the main function
