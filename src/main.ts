@@ -2,7 +2,7 @@ import { parseXML } from "./xml/parser.ts";
 import { generateXML } from "./xml/generator.ts";
 import { generateKML } from "./kml/generate.ts";
 import { KMLTemplate } from "./kml/template.ts";
-import { createSimpleWPMLDocument, generateWPML } from "./kml/wpml_generate.ts";
+import { createSimpleWPMLDocument } from "./kml/wpml_generate.ts";
 
 // Add this interface at the top of the file
 interface XMLParseError extends Error {
